@@ -1,0 +1,30 @@
+{
+  "name": "curt",
+  "version": "0.0.1",
+  "description": "A slacbot virtual assistant.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jps1st/joe.git"
+  },
+  "keywords": [
+    "slack"
+  ],
+  "author": "jps",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jps1st/curt/issues"
+  },
+  "homepage": "",
+  "dependencies": {
+    "botkit": "^0.1.1",
+    "cleverbot.io": "^1.0.4",
+    "harvest": "^0.1.4",
+    "moment": "^2.13.0",
+    "nedb": "^1.8.0"
+  }
+}
