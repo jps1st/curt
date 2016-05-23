@@ -21,8 +21,8 @@ Supply the following info accordingly:
     
     //cleverbot.json - see: https://cleverbot.io/
     {
-      "API_USER": "WJuMjyz4oZcDKYvC",
-      "API_KEY":  "EZdIbeLRuYZmhp9JMrjeFZh2QqFYtzNs"
+      "API_USER": "",
+      "API_KEY":  ""
     }
 
 Start the application by executing on commandline: `npm start`
