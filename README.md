@@ -31,24 +31,31 @@ Start the application by executing on commandline: `npm start`
 
 The following commands are available. They should be explicitly addressed to the bot:
 ###### projects?
-    Lists projects in your harvest domain.
+>Lists projects in your harvest domain.
+
 ###### use [projectid]
-    Binds the current thread to a project.
+>Binds the current thread to a project.
+
 ###### current?
-    Retrieves info on the project bound to the current thread.
-    Also lists down the projects tasks.
+>Retrieves info on the project bound to the current thread. Also lists down the projects tasks.
+
 ###### start session [taskid]
-    Initiates a meeting on the current thread for the supplied task and records important details such as the timestamp.
+>Initiates a meeting on the current thread for the supplied task and records important details such as the timestamp.
+
 ###### session details?
-    Retrieves info about the current active session
+>Retrieves info about the current active session
+
 ###### here
-    Tell bot you joined the session for attendance records.
+>Tell bot you joined the session for attendance records.
+
 ###### end session "[notes]"
-    Ends the current meeting and pushes timetracking entries to harves for all those who attended.
+>Ends the current meeting and pushes timetracking entries to harves for all those who attended.
+
 ###### people?
-    Lists every active person in your harvest domain.
+>Lists every active person in your harvest domain.
+
 ###### register @[slacker] [harvestid]
-    Binds a harvest employee to the slack user
+>Binds a harvest employee to the slack user
 
 
 ###Features:
