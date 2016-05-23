@@ -3,22 +3,29 @@ A slackbot virtual assistant. Version: 0.0.1
 
 ###Setup
 
-Create two files`harvest.json` and `slackbot.json` under the `config` directory on the root folder.
+Create files `cleverbot.json`, `harvest.json` and `slackbot.json` under the `config` directory on the root folder.
 
-Supply the following information under `harvest.json`:
+Supply the following info accordingly:
+    
+    //harvest.json - Your harvest account
     {
        "subdomain":"",
-       "user_agent":"",
        "email":"",
        "password":""
-     }
+     }`
 
-And under `slackbot.json`:
+    //slackbot.json - see: https://api.slack.com/bot-users
     {
          "token": ""
     }
+    
+    //cleverbot.json - see: https://cleverbot.io/
+    {
+      "API_USER": "WJuMjyz4oZcDKYvC",
+      "API_KEY":  "EZdIbeLRuYZmhp9JMrjeFZh2QqFYtzNs"
+    }
 
-Start the application by executing on commandline: ```npm start```
+Start the application by executing on commandline: `npm start`
 
 ###Basic commands
 
@@ -45,21 +52,21 @@ The following commands are available. They should be explicitly addressed to the
 
 
 ###Features:
-- [x] List people in your harvest domain ```people?```
-- [x] Bind people and their slack accounts ```register @[slacker] [harvestid]```
-- [x] Show projects ```projects?```
-- [x] Bind a project to a thread ```use [projectid]```
-- [x] List tasks on the current project ```current?```
-- [x] Track open-time meetings. ```session details?```
-- [x] Track attendance. - ```here```
+- [x] List people in your harvest domain `people?`
+- [x] Bind people and their slack accounts `register @[slacker] [harvestid]`
+- [x] Show projects `projects?`
+- [x] Bind a project to a thread `use [projectid]`
+- [x] List tasks on the current project `current?`
+- [x] Track open-time meetings. `session details?`
+- [x] Track attendance. - `here`
 - [ ] Track closed time meetings.
 - [ ] Extend closed time meetings
-- [ ] Show meeting attendance.
-- [x] Inform members of the meeting's runtime and duration.
-- [ ] Inform members the runtime and remaining duration of the meeting upon attendance.
+- [x] Show meeting attendance. `session details?`
+- [x] Inform members of the session's duration on join. `session details?`
+- [ ] Inform members remaining duration of the meeting upon join. `session details?`
 - [ ] If closed-time meeting, curtbot can inform everyone if the meeting's duration is almost consumed (default 10mins till end)
 - [ ] Automatically terminate a meeting if thread's idle for x time.
-- [x] Manually terminate session ```end session [notes]```
+- [x] Manually terminate session `end session [notes]`
 - [x] After a session, push timetracking entries to harvest for those attended.
 
 
