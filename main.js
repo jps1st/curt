@@ -7,6 +7,7 @@ var sessionStore = require('./lib/stores/session');
 var mixins = require('./lib/mixins');
 var moment = require("moment");
 
+
 var adminCredentials = require('./config/harvest.json');
 var harvest = require('./lib/harvest')(adminCredentials);
 
@@ -163,7 +164,7 @@ function slackMessageHandler(botmessage) {
                 });
 
         }
-        else if (txt === 'session details?') {
+        else if (txt === 'session?') {
             sessionStore.getBoundSession(slackChannel)
                 .then(function (doc) {
 
@@ -195,10 +196,10 @@ function slackMessageHandler(botmessage) {
                 });
         }
         else if (txt === 'here') {
-            //see if person registered
-            console.log('slacker: ' + slacker);
+
             var account;
             var duration;
+            //see if the person is registered
             accountStore.getActiveAccount(slacker)
                 .then(function (doc) {
                     console.log('account: ' + JSON.stringify(doc));

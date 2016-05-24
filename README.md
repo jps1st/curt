@@ -42,7 +42,7 @@ The following commands are available. They should be explicitly addressed to the
 ###### start session [taskid]
 >Initiates a meeting on the current thread for the supplied task and records important details such as the timestamp.
 
-###### session details?
+###### session?
 >Retrieves info about the current active session
 
 ###### here
@@ -57,41 +57,35 @@ The following commands are available. They should be explicitly addressed to the
 ###### register @[slacker] [harvestid]
 >Binds a harvest employee to the slack user
 
-
 ###Features:
 - [x] List people in your harvest domain `people?`
 - [x] Bind people and their slack accounts `register @[slacker] [harvestid]`
 - [x] Show projects `projects?`
 - [x] Bind a project to a thread `use [projectid]`
 - [x] List tasks on the current project `current?`
-- [x] Track open-time meetings. `session details?`
+- [x] Track open-time meetings. `session?`
 - [x] Track attendance. - `here`
 - [ ] Track closed time meetings.
 - [ ] Extend closed time meetings
-- [x] Show meeting attendance. `session details?`
-- [x] Inform members of the session's duration on join. `session details?`
-- [ ] Inform members remaining duration of the meeting upon join. `session details?`
+- [x] Show meeting attendance. `session?`
+- [x] Inform members of the session's duration on join. `session?`
+- [ ] Inform members remaining duration of the meeting upon join. `session?`
 - [ ] If closed-time meeting, curtbot can inform everyone if the meeting's duration is almost consumed (default 10mins till end)
 - [ ] Automatically terminate a meeting if thread's idle for x time.
 - [x] Manually terminate session `end session [notes]`
 - [x] After a session, push timetracking entries to harvest for those attended.
+- [ ] Automatic closing of session after a certain period of inactivity on the channel
+- [ ] A message on the channel will automatically join the member to the session
+- [ ] Record session transcript allow downloading in a simple text file.
+- [ ] check if you are starting a session for a task that exists under the project
+- [ ] localize timestamps
+- [ ] instant replies(e.g. “I’m on it” to acknowledge, “Give me a few” to indicate working status, “ok done” to confirm completion).
+- [ ] React with thinking_face and remove before replying
+- [ ] bot 'is typing' to indicate long process of commands
+- [ ] Permissions, control who can execute certain commands (reg, start session, use, current etc.)
+- [ ] Transfer the note param to start session.
+- [ ] Provide better setup procedures.
+- [ ] Allow multiple teams on a server
 
-
-###Todo:
-- automatic closing of session after a certain period of inactivity on the channel
-- detecting unregistered slack users during `here` and `end session`
-- check if you are starting a session for a task that exists under the project
-- localize timestamps
-- instant replies(e.g. “I’m on it” to acknowledge, “Give me a few” to indicate working status, “ok done” to confirm completion).
-- React with thinking_face and remove before replying
-- bot 'is typing' to indicate long process of commands
-- `session details?` should contain attendance
-- Permissions, control who can execute certain commands (reg, start session, use, current etc.)
-- Automatically record attendance for user if he types a message
-- Take down the notes for the session.
-- Transfer the note param to start session.
-- Provide better setup procedures.
-- Allow multiple teams on a server
-- Make statuses better
 
 
